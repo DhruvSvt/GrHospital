@@ -1,6 +1,6 @@
 <!-- ========================= Header =========================== -->
 <header class="header header-layout1">
-    <div class="header-topbar">
+    {{-- <div class="header-topbar">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-12">
@@ -49,12 +49,13 @@
                 </div><!-- /.col-12 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
-    </div><!-- /.header-top -->
+    </div> --}}
+    <!-- /.header-top -->
     <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="index-2.html">
-                <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
-                <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+                <img src="{{ config('app.url') }}/assets/images/logo/logo.png" class="logo-light" width="270px" alt="logo">
+                <img src="{{ config('app.url') }}/assets/images/logo/logo.png" class="logo-dark" width="270px" alt="logo">
             </a>
             <button class="navbar-toggler" type="button">
                 <span class="menu-lines"><span></span></span>

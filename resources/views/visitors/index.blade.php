@@ -128,7 +128,7 @@
                         <p class="contact__desc">Qualified doctors available six days a week, view our timetable to make
                             an
                             appointment.</p>
-                        <a href="doctors-timetable.html" class="btn btn__white btn__outlined btn__rounded">
+                        <a href="doctors-timetable.html" class="btn btn__white btn__outlined btn__rounded bg-#ff5">
                             <span>View Timetable</span><i class="icon-arrow-right"></i>
                         </a>
                     </div><!-- /.contact__content -->
@@ -183,7 +183,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="video-banner-layout2 bg-overlay">
+                {{-- <div class="video-banner-layout2 bg-overlay">
                     <img src="assets/images/about/2.jpg" alt="about" class="w-100">
                     <a class="video__btn video__btn-white popup-video"
                         href="https://www.youtube.com/watch?v=nrJtHemSPW4">
@@ -192,21 +192,11 @@
                         </div>
                         <span class="video__btn-title color-white">Watch Our Video!</span>
                     </a>
-                </div><!-- /.video-banner -->
+                </div> --}}
+                <!-- /.video-banner -->
             </div><!-- /.col-lg-6 -->
             <div class="col-sm-12 col-md-12 col-lg-7">
                 <div class="about__text bg-white">
-                    <p class="heading__desc mb-30">Our goal is to deliver quality of care in a courteous, respectful,
-                        and
-                        compassionate
-                        manner. We hope you will allow us to care for you and to be the first and best choice for
-                        healthcare.
-                    </p>
-                    <p class="heading__desc mb-30">We will work with you to develop individualised care plans, including
-                        management of
-                        chronic diseases. We are committed to being the region’s premier healthcare network providing
-                        patient
-                        centered care that inspires clinical and service excellence.</p>
                     <ul class="list-items list-unstyled">
                         <li>We conduct a range of tests to help us work out why you're not feeling well and determine
                             the
@@ -633,7 +623,7 @@
                     <!-- Member #1 -->
                     <div class="member">
                         <div class="member__img">
-                            <img src="assets/images/team/1.jpg" alt="member img">
+                            <img src="{{ config('app.url') }}/assets/images/team/1.jpg" alt="member img">
                         </div><!-- /.member-img -->
                         <div class="member__info">
                             <h5 class="member__name"><a href="doctors-single-doctor1.html">Mike Dooley</a></h5>
@@ -657,7 +647,7 @@
                     <!-- Member #2 -->
                     <div class="member">
                         <div class="member__img">
-                            <img src="assets/images/team/2.jpg" alt="member img">
+                            <img src="{{ config('app.url') }}/assets/images/team/2.jpg" alt="member img">
                         </div><!-- /.member-img -->
                         <div class="member__info">
                             <h5 class="member__name"><a href="doctors-single-doctor1.html">Dermatologists</a></h5>
@@ -681,7 +671,7 @@
                     <!-- Member #3 -->
                     <div class="member">
                         <div class="member__img">
-                            <img src="assets/images/team/3.jpg" alt="member img">
+                            <img src="{{ config('app.url') }}/assets/images/team/3.jpg" alt="member img">
                         </div><!-- /.member-img -->
                         <div class="member__info">
                             <h5 class="member__name"><a href="doctors-single-doctor1.html">Maria Andaloro</a></h5>
@@ -705,7 +695,7 @@
                     <!-- Member #4 -->
                     <div class="member">
                         <div class="member__img">
-                            <img src="assets/images/team/4.jpg" alt="member img">
+                            <img src="{{ config('app.url') }}/assets/images/team/4.jpg" alt="member img">
                         </div><!-- /.member-img -->
                         <div class="member__info">
                             <h5 class="member__name"><a href="doctors-single-doctor1.html">Dupree Black</a></h5>
