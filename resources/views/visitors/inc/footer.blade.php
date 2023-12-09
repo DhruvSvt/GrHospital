@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-3">
                     <div class="footer-widget-about">
-                        <img src="assets/images/logo/logo-light.png" alt="logo" class="mb-30">
+                        <img src="{{ asset('assets/images/logo/dark-logo.png') }}" alt="logo" width="240px" class="mb-30">
                         <p class="color-gray">Our goal is to deliver quality of care in a courteous, respectful, and
                             compassionate manner. We hope you will allow us to care for you and strive to be the first
                             and best
@@ -72,6 +72,6 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div><!-- /.footer-primary -->
-   
+
 </footer>
 <!-- /.Footer -->
