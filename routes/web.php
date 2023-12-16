@@ -17,15 +17,13 @@ Route::get('/', function () {
     return view('visitors.index');
 });
 
-// Route::get('/gallery',function()
-// {
-//     return view('visitors.gallery');
-// });
-Route::view('/gallery','visitors.gallery');
+Route::view('/gallery','visitors.gallery')->name('gallery');
 
-Route::view('/doctors','visitors.doctor');
+Route::view('/doctors','visitors.doctor')->name('doctors');
 
-Route::view('/blogs','visitors.blogs');
+Route::view('/blogs','visitors.blogs')->name('blogs');
+
+Route::view('/blog-single','visitors.blog-single')->name('blog-single');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
