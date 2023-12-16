@@ -636,15 +636,10 @@
                             <p class="member__job">{{ $doctor->specialty }}</p>
                             <p class="member__desc">{{ \Illuminate\Support\Str::limit($doctor->desc, $limit = 150, $end = '...') }}</p>
                             <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                                <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
+                                <a href="{{ route('blog-detail',$doctor->id) }}" class="btn btn__secondary btn__link btn__rounded">
                                     <span>Read More</span>
                                     <i class="icon-arrow-right"></i>
                                 </a>
-                                <ul class="social-icons list-unstyled mb-0">
-                                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
-                                </ul><!-- /.social-icons -->
                             </div>
                         </div><!-- /.member-info -->
                     </div>
@@ -1076,97 +1071,35 @@
             </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
         <div class="row">
-            <!-- Post Item #1 -->
+            @foreach ($blogs as $blog )
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="post-item">
                     <div class="post__img">
                         <a href="blog-single-post.html">
-                            <img src="assets/images/blog/grid/1.jpg" alt="post image" loading="lazy">
+                            <img src="{{ Voyager::image($blog->image) }}" alt="post image" loading="lazy">
                         </a>
                     </div><!-- /.post__img -->
                     <div class="post__body">
                         <div class="post__meta-cat">
-                            <a href="#">Mental Health</a>
+                            <a href="#">{{ $blog->tag }}</a>
                         </div><!-- /.blog-meta-cat -->
                         <div class="post__meta d-flex">
-                            <span class="post__meta-date">Jan 30, 2022</span>
-                            <a class="post__meta-author" href="#">Martin King</a>
+                            <span class="post__meta-date">{{ Carbon\Carbon::parse($blog->created_at)->format('d-M-Y') ?? '' }}</span>
+                            {{-- <a class="post__meta-author" href="#">Martin King</a> --}}
                         </div>
-                        <h4 class="post__title"><a href="#">6 Tips to Protect Your Mental Health When You’re Sick</a>
+                        <h4 class="post__title"><a href="#">{{ $blog->title }}</a>
                         </h4>
 
-                        <p class="post__desc">It’s normal to feel anxiety, worry and grief any time you’re diagnosed
-                            with a
-                            condition that’s certainly true if you test positive for COVID-19, or are presumed to be
-                            positive...
+                        <p class="post__desc">{{ $blog->desc }}
                         </p>
-                        <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
+                        <a href="#" class="btn btn__secondary btn__link btn__rounded">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
                     </div><!-- /.post__body -->
                 </div><!-- /.post-item -->
-            </div><!-- /.col-lg-4 -->
-            <!-- Post Item #2 -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="post-item">
-                    <div class="post__img">
-                        <a href="blog-single-post.html">
-                            <img src="assets/images/blog/grid/2.jpg" alt="post image" loading="lazy">
-                        </a>
-                    </div><!-- /.post__img -->
-                    <div class="post__body">
-                        <div class="post__meta-cat">
-                            <a href="#">Infectious</a><a href="#">Tips</a>
-                        </div><!-- /.blog-meta-cat -->
-                        <div class="post__meta d-flex">
-                            <span class="post__meta-date">Jan 30, 2022</span>
-                            <a class="post__meta-author" href="#">John Ezak</a>
-                        </div>
-                        <h4 class="post__title"><a href="#">Unsure About Wearing a Face Mask? Here’s How and Why</a>
-                        </h4>
-                        <p class="post__desc">That means that you should still be following any shelter-in-place orders
-                            in your
-                            community. But when you’re venturing out to the grocery store, pharmacy or hospital..
-                        </p>
-                        <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
-                            <span>Read More</span>
-                            <i class="icon-arrow-right"></i>
-                        </a>
-                    </div><!-- /.post__body -->
-                </div><!-- /.post-item -->
-            </div><!-- /.col-lg-4 -->
-            <!-- Post Item #3 -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="post-item">
-                    <div class="post__img">
-                        <a href="blog-single-post.html">
-                            <img src="assets/images/blog/grid/3.jpg" alt="post image" loading="lazy">
-                        </a>
-                    </div><!-- /.post__img -->
-                    <div class="post__body">
-                        <div class="post__meta-cat">
-                            <a href="#">Life Style</a><a href="#">Nutrition</a>
-                        </div><!-- /.blog-meta-cat -->
-                        <div class="post__meta d-flex">
-                            <span class="post__meta-date">Jan 28, 2022</span>
-                            <a class="post__meta-author" href="#">Saul Wade</a>
-                        </div>
-                        <h4 class="post__title"><a href="#">Tips for Eating Healthy When You’re Working From Home </a>
-                        </h4>
-
-                        <p class="post__desc">It’s normal to feel anxiety, worry and grief any time you’re diagnosed
-                            with a
-                            condition that’s certainly true if you test positive for COVID-19, or are presumed to be
-                            positive...
-                        </p>
-                        <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
-                            <span>Read More</span>
-                            <i class="icon-arrow-right"></i>
-                        </a>
-                    </div><!-- /.post__body -->
-                </div><!-- /.post-item -->
-            </div><!-- /.col-lg-4 -->
+            </div>
+            @endforeach
         </div><!-- /.row -->
     </div><!-- /.container -->
 </section>
