@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('full_name')->nullable();
             $table->string('specialty')->nullable();
-            $table->string('desc')->nullable();
+            $table->longText('desc')->nullable();
             $table->smallInteger('status')->default(0)->nullable();
             $table->timestamps();
             $table->softDeletes();

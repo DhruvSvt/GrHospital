@@ -64,7 +64,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav__item has-dropdown">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Home</a>
-                        <ul class="dropdown-menu">
+                        {{-- <ul class="dropdown-menu">
                             <li class="nav__item">
                                 <a href="index-2.html" class="nav__item-link">Home Main</a>
                             </li><!-- /.nav-item -->
@@ -80,7 +80,7 @@
                             <li class="nav__item">
                                 <a href="home-pharmacy.html" class="nav__item-link">Home pharmacy</a>
                             </li><!-- /.nav-item -->
-                        </ul><!-- /.dropdown-menu -->
+                        </ul><!-- /.dropdown-menu --> --}}
                     </li><!-- /.nav-item -->
                     <li class="nav__item has-dropdown">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us</a>
