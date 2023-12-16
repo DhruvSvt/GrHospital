@@ -17,12 +17,15 @@ Route::get('/', function () {
     return view('visitors.index');
 });
 
-Route::get('/gallery',function()
-{
-    return view('visitors.gallery');
-});
+// Route::get('/gallery',function()
+// {
+//     return view('visitors.gallery');
+// });
+Route::view('/gallery','visitors.gallery');
 
 Route::view('/doctors','visitors.doctor');
+
+Route::view('/blogs','visitors.blogs');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
