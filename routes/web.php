@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('visitors.index');
 });
+Route::get('/gallery',function()
+{
+    return view('visitors.gallery');
+});
 
 
 Route::group(['prefix' => 'admin'], function () {
