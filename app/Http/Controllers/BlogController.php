@@ -82,4 +82,12 @@ class BlogController extends Controller
     {
         //
     }
+
+    public function blog_detail($id){
+
+        $blog = Blog::findOrFail($id);
+        $recents = Blog::whereStatus(true)->latest()->limit(3)->get();
+        $features = Blog::whereStatus(true)->inRandomOrder()->limit(3)->get();
+        return view('visitors.blog-single',compact('blog','recents','features'));
+    }
 }

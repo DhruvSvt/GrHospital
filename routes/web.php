@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,10 +22,12 @@ Route::get('/',[IndexController::class,'index']);
 Route::view('/gallery','visitors.gallery')->name('gallery');
 
 Route::view('/doctors','visitors.doctor')->name('doctors');
+Route::get('/doctor/{id}',[DoctorController::class,'doctor_detail'])->name('doctor-detail');
 
 Route::view('/blogs','visitors.blogs')->name('blogs');
 
 Route::view('/blog-single','visitors.blog-single')->name('blog-single');
+Route::get('/blog/{id}',[BlogController::class,'blog_detail'])->name('blog-detail');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

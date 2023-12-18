@@ -603,7 +603,7 @@
 </section>
 <!-- /.Features Layout 2 -->
 
-<!-- ====================== Team ========================= -->
+<!-- ====================== Doctors ========================= -->
 <section class="team-layout2 pb-80">
     <div class="container">
         <div class="row">
@@ -636,7 +636,7 @@
                             <p class="member__job">{{ $doctor->specialty }}</p>
                             <p class="member__desc">{{ \Illuminate\Support\Str::limit($doctor->desc, $limit = 150, $end = '...') }}</p>
                             <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                                <a href="{{ route('blog-detail',$doctor->id) }}" class="btn btn__secondary btn__link btn__rounded">
+                                <a href="{{ route('doctor-detail',$doctor->id) }}" class="btn btn__secondary btn__link btn__rounded">
                                     <span>Read More</span>
                                     <i class="icon-arrow-right"></i>
                                 </a>
@@ -650,7 +650,7 @@
         </div><!-- /.row -->
     </div><!-- /.container -->
 </section>
-<!-- /.Team -->
+<!-- /.Doctors -->
 
 <!-- ====================== Work Process ========================= -->
 <section class="work-process work-process-carousel pt-130 pb-0 bg-overlay bg-overlay-secondary">
@@ -1090,9 +1090,10 @@
                         <h4 class="post__title"><a href="#">{{ $blog->title }}</a>
                         </h4>
 
-                        <p class="post__desc">{{ $blog->desc }}
+                        <p class="post__desc">
+                            {{ \Illuminate\Support\Str::limit($blog->description, $limit = 150, $end = '...') }}
                         </p>
-                        <a href="#" class="btn btn__secondary btn__link btn__rounded">
+                        <a href="{{ route('blog-detail',$blog->id) }}" class="btn btn__secondary btn__link btn__rounded">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
