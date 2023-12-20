@@ -17,7 +17,7 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
-Route::get('/',[IndexController::class,'index']);
+Route::get('/',[IndexController::class,'index'])->name('index');
 
 Route::view('/gallery','visitors.gallery')->name('gallery');
 
