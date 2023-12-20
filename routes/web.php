@@ -24,7 +24,7 @@ Route::view('/gallery','visitors.gallery')->name('gallery');
 Route::view('/doctors','visitors.doctor')->name('doctors');
 Route::get('/doctor/{id}',[DoctorController::class,'doctor_detail'])->name('doctor-detail');
 
-Route::view('/blogs','visitors.blogs')->name('blogs');
+Route::get('/blogs',[BlogController::class,'show'])->name('blogs');
 
 Route::view('/blog-single','visitors.blog-single')->name('blog-single');
 Route::get('/blog/{id}',[BlogController::class,'blog_detail'])->name('blog-detail');

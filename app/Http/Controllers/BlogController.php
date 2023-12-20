@@ -46,7 +46,8 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        //
+        $blogs = Blog::whereStatus(true)->get();
+        return view('visitors.blogs',compact('blogs'));
     }
 
     /**
