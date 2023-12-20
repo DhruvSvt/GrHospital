@@ -11,4 +11,9 @@ class DoctorController extends Controller
         $doctor = Doctor::findOrFail($id);
         return view('visitors.doctor-single',compact('doctor'));
     }
+
+    public function show (){
+        
+        return view('visitors.doctor');
+    }
 }

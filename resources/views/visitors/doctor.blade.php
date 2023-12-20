@@ -6,12 +6,13 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
-                <h1 class="pagetitle__heading">Providing Care for The Sickest In Community. </h1>
-                <p class="pagetitle__desc">GR Hospital has been present in India since 1990, offering innovative solutions,
+                <h1 class="pagetitle__heading">Doctors — We Were There The Day You Were Born! </h1>
+                <p class="pagetitle__desc">GR Hospital has been present in India since 1990, offering innovative
+                    solutions,
                     specializing in medical services for treatment of medical infrastructure.
                 </p>
                 <a href="appointment.html" class="btn btn__primary btn__rounded">
-                    <span>Make Appointment</span>
+                    <span>Enquiry</span>
                     <i class="icon-arrow-right"></i>
                 </a>
             </div><!-- /.col-xl-5 -->

@@ -89,7 +89,7 @@
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Doctors</a>
                         <ul class="dropdown-menu">
                             <li class="nav__item">
-                                <a href="doctors-timetable.html" class="nav__item-link">Doctors</a>
+                                <a href="{{ route('doctors') }}" class="nav__item-link">Doctors</a>
                             </li>
                             <li class="nav__item">
                                 <a href="doctors-standard.html" class="nav__item-link">Our Doctors List</a>
