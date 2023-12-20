@@ -13,7 +13,7 @@ class DoctorController extends Controller
     }
 
     public function show (){
-        
-        return view('visitors.doctor');
+        $doctors = Doctor::whereStatus(true)->latest()->paginate(3);
+        return view('visitors.doctor',compact('doctors'));
     }
 }
