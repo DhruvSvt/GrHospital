@@ -37,14 +37,16 @@
                             <a>{{ $blog->tag }}</a>
                         </div><!-- /.blog-meta-cat -->
                         <div class="post__meta d-flex">
-                            <span class="post__meta-date">{{ Carbon\Carbon::parse($blog->created_at)->format('d-M-Y') ?? '' }}</span>
+                            <span class="post__meta-date">{{ Carbon\Carbon::parse($blog->created_at)->format('d-M-Y') ??
+                                '' }}</span>
                         </div>
                         <h4 class="post__title"><a href="#">{{ $blog->title }}</a>
                         </h4>
                         <p class="post__desc">
                             {{ \Illuminate\Support\Str::limit($blog->description, $limit = 150, $end = '...') }}
                         </p>
-                        <a href="{{ route('blog-detail',$blog->id) }}" class="btn btn__secondary btn__link btn__rounded">
+                        <a href="{{ route('blog-detail',$blog->id) }}"
+                            class="btn btn__secondary btn__link btn__rounded">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
@@ -58,11 +60,46 @@
             <div class="col-12 text-center">
                 <nav class="pagination-area">
                     <ul class="pagination justify-content-center">
-                        <li><a class="current" href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#"><i class="icon-arrow-right"></i></a></li>
+                        <nav class="pagination-area">
+                            {{-- <ul class="pagination justify-content-center">
+
+                                @if ($blogs->currentPage() == 1)
+                                <li class="disabled"><span class="current"></span></li>
+                                @else
+                                <li><a href="{{ $blogs->url(1) }}">1</a></li>
+                                @endif
+
+                                @if ($blogs->currentPage() > 2)
+                                <li><span>...</span></li>
+                                @endif
+
+                                @for ($i = max(2, $blogs->currentPage() - 1); $i <= min($blogs->lastPage(),
+                                    $blogs->currentPage() + 1); $i++)
+                                    @if ($i == $blogs->currentPage())
+                                    <li class="disabled"><span class="current"></span></li>
+                                    @else
+                                    <li><a href="{{ $blogs->url($i) }}">{{ $i }}</a></li>
+                                    @endif
+                                @endfor
+
+                                @if ($blogs->currentPage() < $blogs->lastPage() - 1)
+                                    <li><span>...</span></li>
+                                @endif
+
+                                @if ($blogs->currentPage() == $blogs->lastPage())
+                                    <li class="disabled"><span></span></li>
+                                    @else
+                                    <li><a href="{{ $blogs->nextPageUrl() }}"><i class="icon-arrow-right"></i></a>
+                                    </li>
+                                @endif
+                            </ul> --}}
+                        </nav>
+
                     </ul>
                 </nav>
+            <div class="float-right">
+                {!! $blogs->links() !!}
+            </div>
             </div>
         </div>
     </div>

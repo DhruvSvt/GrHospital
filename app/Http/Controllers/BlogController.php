@@ -46,7 +46,7 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        $blogs = Blog::whereStatus(true)->get();
+        $blogs = Blog::whereStatus(true)->latest()->paginate(3);
         return view('visitors.blogs',compact('blogs'));
     }
 

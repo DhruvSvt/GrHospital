@@ -2247,7 +2247,7 @@ input[type=radio] {
 /*----------------------
     Pagination
 -----------------------*/
-.pagination li {
+/* .pagination li {
     margin-right: 10px;
 }
 
@@ -2285,7 +2285,7 @@ input[type=radio] {
         height: 35px;
         line-height: 31px;
     }
-}
+} */
 
 /*-------------------
     lists
