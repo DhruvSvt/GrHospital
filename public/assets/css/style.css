@@ -8622,4 +8622,7 @@ textarea.form-control {
     color: #848e9f;
 }
 
+.svt:hover{
+    color: red !important;
+}
 /*# sourceMappingURL=style.css.map */

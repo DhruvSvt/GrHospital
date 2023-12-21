@@ -68,9 +68,9 @@
                     </div><!-- /.footer-widget__content -->
                 </div><!-- /.col-lg-2 -->
             </div><!-- /.row -->
-            <div class="col-lg-12 text-" style="color:#ffffff;">
-                Copyright © Simpkins School Agra <script>document.write(new Date().getFullYear())</script> . All rights reserved. ERP &amp; Website By <a
-                    href="https://svtindia.in/">SVT INDIA</a>
+            <div class="col-lg-12 " style="color:#ffffff;">
+                Copyright © GR Hospital <script>document.write(new Date().getFullYear())</script> . All rights reserved. Admin Panel &amp; Website By <a
+                    href="https://svtindia.in/" class="svt">SVT INDIA</a>
             </div>
         </div><!-- /.container -->
     </div><!-- /.footer-primary -->
