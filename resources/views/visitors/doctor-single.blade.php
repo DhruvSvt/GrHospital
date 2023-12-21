@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex flex-wrap justify-content-end align-items-center">
-                <a href="appointment.html" class="btn btn__white btn__rounded">Enquiry</a>
+                <a href="{{ route('enquiry') }}" class="btn btn__white btn__rounded">Enquiry</a>
             </div>
         </div>
     </div>

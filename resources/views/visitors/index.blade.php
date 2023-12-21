@@ -112,8 +112,8 @@
                         <p class="contact__desc">Please feel free to contact our friendly reception staff with any
                             general or
                             medical enquiry.</p>
-                        <a href="tel:+201061245741" class="phone__number">
-                            <i class="icon-phone"></i> <span>01061245741</span>
+                        <a href="tel:+9927600542" class="phone__number">
+                            <i class="icon-phone"></i> <span>9927600542</span>
                         </a>
                     </div><!-- /.contact__content -->
                 </div><!-- /.contact-box -->
@@ -124,12 +124,12 @@
                         <i class="icon-health-report"></i>
                     </div><!-- /.contact__icon -->
                     <div class="contact__content">
-                        <h2 class="contact__title">Doctors Timetable</h2>
-                        <p class="contact__desc">Qualified doctors available six days a week, view our timetable to make
+                        <h2 class="contact__title">Doctors List</h2>
+                        <p class="contact__desc">Qualified doctors available six days a week, view our Doctors LIst to make
                             an
                             appointment.</p>
-                        <a href="doctors-timetable.html" class="btn btn__white btn__outlined btn__rounded bg-#ff5">
-                            <span>View Timetable</span><i class="icon-arrow-right"></i>
+                        <a href="{{ route('doctor-list') }}" class="btn btn__white btn__outlined btn__rounded bg-#ff5">
+                            <span>View List</span><i class="icon-arrow-right"></i>
                         </a>
                     </div><!-- /.contact__content -->
                 </div><!-- /.contact-box -->
@@ -178,7 +178,7 @@
                             and best
                             choice for healthcare.
                         </p>
-                        <a href="doctors-timetable.html" class="btn btn__secondary btn__rounded mb-70">
+                        <a href="{{ route('doctors') }}" class="btn btn__secondary btn__rounded mb-70">
                             <span>Find A Doctor</span> <i class="icon-arrow-right"></i>
                         </a>
                     </div>
@@ -251,7 +251,7 @@
                                 <li>Neuro Oncology</li>
                                 <li>Geriatric Neurology</li>
                             </ul>
-                            <a href="services-single.html" class="btn btn__secondary btn__outlined btn__rounded">
+                            <a href="#" class="btn btn__secondary btn__outlined btn__rounded">
                                 <span>Read More</span>
                                 <i class="icon-arrow-right"></i>
                             </a>
@@ -276,7 +276,7 @@
                                 <li>Neuro Oncology</li>
                                 <li>Geriatric Neurology</li>
                             </ul>
-                            <a href="services-single.html" class="btn btn__secondary btn__outlined btn__rounded">
+                            <a href="#" class="btn btn__secondary btn__outlined btn__rounded">
                                 <span>Read More</span>
                                 <i class="icon-arrow-right"></i>
                             </a>
@@ -300,7 +300,7 @@
                                 <li>Histopathology</li>
                                 <li>Cytopathology </li>
                             </ul>
-                            <a href="services-single.html" class="btn btn__secondary btn__outlined btn__rounded">
+                            <a href="#" class="btn btn__secondary btn__outlined btn__rounded">
                                 <span>Read More</span>
                                 <i class="icon-arrow-right"></i>
                             </a>
@@ -324,7 +324,7 @@
                                 <li>Umbilical Cord Appearance </li>
                                 <li>Repositioning Techniques</li>
                             </ul>
-                            <a href="services-single.html" class="btn btn__secondary btn__outlined btn__rounded">
+                            <a href="#" class="btn btn__secondary btn__outlined btn__rounded">
                                 <span>Read More</span>
                                 <i class="icon-arrow-right"></i>
                             </a>
@@ -347,7 +347,7 @@
                                 <li>Research Analyst</li>
                                 <li>Quality Assurance</li>
                             </ul>
-                            <a href="services-single.html" class="btn btn__secondary btn__outlined btn__rounded">
+                            <a href="#" class="btn btn__secondary btn__outlined btn__rounded">
                                 <span>Read More</span>
                                 <i class="icon-arrow-right"></i>
                             </a>
@@ -370,7 +370,7 @@
                                 <li>Diabetic retinopathy</li>
                                 <li>Excessive tearing</li>
                             </ul>
-                            <a href="services-single.html" class="btn btn__secondary btn__outlined btn__rounded">
+                            <a href="#" class="btn btn__secondary btn__outlined btn__rounded">
                                 <span>Read More</span>
                                 <i class="icon-arrow-right"></i>
                             </a>
@@ -391,8 +391,8 @@
                 <div class="note font-weight-bold">
                     <i class="far fa-file-alt color-primary"></i>
                     <span>Delivering tomorrow’s health care for your family.</span>
-                    <a href="doctors-timetable.html" class="btn btn__link btn__secondary">
-                        <span>View Doctors’ Timetable</span><i class="icon-arrow-right"></i>
+                    <a href="{{ route('doctor-list') }}" class="btn btn__link btn__secondary">
+                        <span>View Doctors’ Lists</span><i class="icon-arrow-right"></i>
                     </a>
                 </div>
             </div><!-- /.col-sm-6 -->
@@ -407,8 +407,8 @@
                             </div>
                         </div><!-- /.testimonials__rating-inner -->
                     </div><!-- /.testimonials__rating -->
-                    <a href="appointment.html" class="btn btn__primary btn__rounded">
-                        <span>Make Appointment</span> <i class="icon-arrow-right"></i>
+                    <a href="{{ route('enquiry') }}" class="btn btn__primary btn__rounded">
+                        <span>Make Enquiry</span> <i class="icon-arrow-right"></i>
                     </a>
                 </div><!-- /.info__meta -->
             </div><!-- /.col-sm-6 -->
@@ -631,7 +631,7 @@
                         ">
                         </div><!-- /.member-img -->
                         <div class="member__info">
-                            <h5 class="member__name"><a href="doctors-single-doctor1.html">{{ $doctor->full_name }}</a>
+                            <h5 class="member__name"><a href="{{ route('doctor-detail',$doctor->id) }}">{{ $doctor->full_name }}</a>
                             </h5>
                             <p class="member__job">{{ $doctor->specialty }}</p>
                             <p class="member__desc">{{ \Illuminate\Support\Str::limit($doctor->desc, $limit = 150, $end = '...') }}</p>
@@ -784,7 +784,7 @@
                     </p>
                 </div><!-- /.col-lg-7 -->
                 <div class="col-sm-12 col-md-12 col-lg-3">
-                    <a href="appointment.html" class="btn btn__primary btn__secondary-style2 btn__rounded">
+                    <a href="{{ route('enquiry') }}" class="btn btn__primary btn__secondary-style2 btn__rounded">
                         <span>Healthcare Programs</span>
                         <i class="icon-arrow-right"></i>
                     </a>
@@ -926,7 +926,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="post-item">
                     <div class="post__img">
-                        <a href="blog-single-post.html">
+                        <a href="{{ route('blog-detail',$blog->id) }}">
                             <img src="{{ Voyager::image($blog->image) }}" alt="post image" loading="lazy">
                         </a>
                     </div><!-- /.post__img -->

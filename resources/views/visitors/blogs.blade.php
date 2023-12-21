@@ -7,12 +7,6 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="pagetitle__heading">Health Essentials Blogs</h1>
-                {{-- <nav>
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
-                    </ol>
-                </nav> --}}
             </div><!-- /.col-12 -->
         </div><!-- /.row -->
     </div><!-- /.container -->
@@ -28,7 +22,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="post-item">
                     <div class="post__img">
-                        <a href="blog-single-post.html">
+                        <a href="{{ route('blog-detail',$blog->id) }}">
                             <img src="{{ Voyager::image($blog->image) }}" alt="blog image" loading="lazy">
                         </a>
                     </div><!-- /.post__img -->

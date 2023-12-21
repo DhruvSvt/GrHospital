@@ -8,13 +8,6 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="heading__title">Our Gallery</h1>
-                {{-- <nav>
-                    <ol class="breadcrumb justify-content-center mb-0">
-                        <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="about-us.html">About</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Our Gallery</li>
-                    </ol>
-                </nav> --}}
             </div>
         </div>
     </div>

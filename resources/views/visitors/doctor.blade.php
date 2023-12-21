@@ -11,7 +11,7 @@
                     solutions,
                     specializing in medical services for treatment of medical infrastructure.
                 </p>
-                <a href="appointment.html" class="btn btn__primary btn__rounded">
+                <a href="{{ route('enquiry') }}" class="btn btn__primary btn__rounded">
                     <span>Enquiry</span>
                     <i class="icon-arrow-right"></i>
                 </a>

@@ -2,7 +2,7 @@
 <header class="header header-layout1">
     <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index-2.html">
+            <a class="navbar-brand" href="{{ route('index') }}">
                 <img src="{{ config('app.url') }}/assets/images/logo/logo.png" class="logo-light" width="270px"
                     alt="logo">
                 <img src="{{ config('app.url') }}/assets/images/logo/logo.png" class="logo-dark" width="270px"
