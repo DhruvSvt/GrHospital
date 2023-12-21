@@ -26,7 +26,7 @@
                                 <a href="{{ route('facilities') }}" class="nav__item-link">Our Services</a>
                             </li>
                             <li class="nav__item">
-                                <a href="gallery.html" class="nav__item-link">Our Gallery</a>
+                                <a href="{{ route('gallery') }}" class="nav__item-link">Our Gallery</a>
                             </li>
                             <li class="nav__item">
                                 <a href="{{ route('enquiry') }}" class="nav__item-link">Enquiry</a>

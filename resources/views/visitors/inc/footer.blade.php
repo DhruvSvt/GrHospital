@@ -5,42 +5,39 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-3">
                     <div class="footer-widget-about">
-                        <img src="{{ asset('assets/images/logo/dark-logo.png') }}" alt="logo" width="240px" class="mb-30">
+                        <img src="{{ asset('assets/images/logo/dark-logo.png') }}" alt="logo" width="240px"
+                            class="mb-30">
                         <p class="color-gray">Our goal is to deliver quality of care in a courteous, respectful, and
                             compassionate manner. We hope you will allow us to care for you and strive to be the first
                             and best
                             choice for your family healthcare.
                         </p>
-                        <a href="appointment.html" class="btn btn__primary btn__primary-style2 btn__link">
-                            <span>Make Appointment</span> <i class="icon-arrow-right"></i>
+                        <a href="{{ route('enquiry') }}" class="btn btn__primary btn__primary-style2 btn__link">
+                            <span>Enquiry</span> <i class="icon-arrow-right"></i>
                         </a>
                     </div><!-- /.footer-widget__content -->
                 </div><!-- /.col-xl-2 -->
                 <div class="col-sm-6 col-md-6 col-lg-2 offset-lg-1">
                     <div class="footer-widget-nav">
-                        <h6 class="footer-widget__title">Departments</h6>
+                        <h6 class="footer-widget__title">Services</h6>
                         <nav>
                             <ul class="list-unstyled">
-                                <li><a href="#">Neurology Clinic</a></li>
-                                <li><a href="#">Cardiology Clinic</a></li>
-                                <li><a href="#">Pathology Clinic</a></li>
-                                <li><a href="#">Laboratory Analysis</a></li>
-                                <li><a href="#">Pediatric Clinic</a></li>
-                                <li><a href="#">Cardiac Clinic</a></li>
+                                <li><a href="{{ route('facilities') }}">Facilities</a></li>
+                                <li><a href="{{ route('blogs') }}">Blogs</a></li>
+                                <li><a href="{{ route('enquiry') }}">Enquiry</a></li>
                             </ul>
                         </nav>
                     </div><!-- /.footer-widget__content -->
                 </div><!-- /.col-lg-2 -->
                 <div class="col-sm-6 col-md-6 col-lg-2">
                     <div class="footer-widget-nav">
-                        <h6 class="footer-widget__title">Links</h6>
+                        <h6 class="footer-widget__title">Know About Us</h6>
                         <nav>
                             <ul class="list-unstyled">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Our CLinic</a></li>
-                                <li><a href="#">Our Doctors</a></li>
-                                <li><a href="#">News & Media</a></li>
-                                <li><a href="#">Appointments</a></li>
+                                <li><a href="{{ route('index') }}">Home</a></li>
+                                <li><a href="{{ route('doctors') }}">Our Doctors</a></li>
+                                <li><a href="{{ route('doctor-list') }}">Doctors List</a></li>
+                                <li><a href="{{ route('gallery') }}">Our Gallery</a></li>
                             </ul>
                         </nav>
                     </div><!-- /.footer-widget__content -->
@@ -51,14 +48,15 @@
                         <ul class="contact-list list-unstyled">
                             <li>If you have any questions or need help, feel free to contact with our team.</li>
                             <li>
-                                <a href="tel:01061245741" class="phone__number">
-                                    <i class="icon-phone"></i> <span>01061245741</span>
+                                <a href="tel:9927600542" class="phone__number">
+                                    <i class="icon-phone"></i> <span>(91) 9927600542</span>
                                 </a>
                             </li>
-                            <li class="color-body">2307 Beverley Rd Brooklyn, New York 11226 United States.</li>
+                            <li class="color-body">BEROLI AHIR SHAMSABAD ROAD, Shamsabad Road, Kaveri Vihar Phase II,
+                                Sri Nikunj Colony, Agra, Uttar Pradesh 282001</li>
                         </ul>
                         <div class="d-flex align-items-center">
-                            <a href="contact-us.html" class="btn btn__primary btn__link mr-30">
+                            <a href="{{ route('enquiry') }}" class="btn btn__primary btn__link mr-30">
                                 <i class="icon-arrow-right"></i> <span>Get Directions</span>
                             </a>
                             <ul class="social-icons list-unstyled mb-0">
@@ -70,8 +68,13 @@
                     </div><!-- /.footer-widget__content -->
                 </div><!-- /.col-lg-2 -->
             </div><!-- /.row -->
+            <div class="col-lg-12 text-" style="color:#ffffff;">
+                Copyright © Simpkins School Agra <script>document.write(new Date().getFullYear())</script> . All rights reserved. ERP &amp; Website By <a
+                    href="https://svtindia.in/">SVT INDIA</a>
+            </div>
         </div><!-- /.container -->
     </div><!-- /.footer-primary -->
 
 </footer>
 <!-- /.Footer -->
+
