@@ -43,8 +43,8 @@
                                 general
                                 or medical enquiry call us.
                             </p>
-                            <a href="tel:+201061245741" class="phone__number">
-                                <i class="icon-phone"></i> <span>01061245741</span>
+                            <a href="tel:+9927600542" class="phone__number">
+                                <i class="icon-phone"></i> <span>(91) 9927600542</span>
                             </a>
                         </div>
                     </div>
