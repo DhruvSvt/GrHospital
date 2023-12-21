@@ -2768,7 +2768,7 @@ input[type=radio] {
 }
 
 .navbar .nav__item .nav__item-link {
-    font-size: 15px;
+    font-size: 17.5px;
     font-weight: 700;
     text-transform: capitalize;
     display: block;
@@ -2776,14 +2776,14 @@ input[type=radio] {
     color: var(--secondary-color);
     line-height: 100px;
     letter-spacing: 0.4px;
-    padding-right: 15px;
+    padding-right: 18px;
 }
 
 .navbar .nav__item .nav__item-link:before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10px;
     width: 0;
     height: 2px;
     background-color: var(--primary-color);

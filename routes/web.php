@@ -39,6 +39,6 @@ Route::post('/enquiry/store',[EnquiryController::class,'store'])->name('enquiry-
 
 Route::get('/gallery',[GalleryController::class,'index'])->name('gallery');
 
-Route::view('/service','visitors.service')->name('service');
+Route::view('/facilities','visitors.facilities')->name('facilities');
 
 
