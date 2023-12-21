@@ -18,6 +18,10 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
 Route::get('/',[IndexController::class,'index'])->name('index');
 
 Route::view('/gallery','visitors.gallery')->name('gallery');
@@ -34,6 +38,4 @@ Route::get('/blog/{id}',[BlogController::class,'blog_detail'])->name('blog-detai
 Route::get('/enquiry',[EnquiryController::class,'index'])->name('enquiry');
 Route::post('/enquiry/store',[EnquiryController::class,'store'])->name('enquiry-store');
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+

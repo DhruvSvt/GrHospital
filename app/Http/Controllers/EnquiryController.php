@@ -41,8 +41,8 @@ class EnquiryController extends Controller
             'phone' => 'required',
         ]);
         Enquiry::create($request->post());
+        return redirect()->back()->with('success', "Thank you for reaching out to us! We will get back to you as soon as possible.");
 
-        return redirect()->back();
     }
 
     /**

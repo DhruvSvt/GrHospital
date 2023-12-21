@@ -71,7 +71,8 @@
                     </form>
                     <div
                         class="contact-panel__info d-flex flex-column justify-content-between bg-overlay bg-overlay-primary-gradient">
-                        <div class="bg-img"><img src="{{ config('app.url') }}/assets/images/banners/1.jpg" alt="banner"></div>
+                        <div class="bg-img"><img src="{{ config('app.url') }}/assets/images/banners/1.jpg" alt="banner">
+                        </div>
                         <div>
                             <h4 class="contact-panel__title color-white">Quick Contacts</h4>
                             <p class="contact-panel__desc font-weight-bold color-white mb-30">Please feel free to
@@ -102,5 +103,14 @@
         </div>
     </div>
 </section>
+@if (Session::has('success'))
+<script>
+    swal("Success", "{{ Session::get('success') }}", 'success', {
+        buttons: {
+            confirm: "OK",
+        },
+    });
+</script>
+@endif
 <!-- /.contact -->
 @endsection
