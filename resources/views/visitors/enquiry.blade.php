@@ -13,8 +13,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="contact-panel d-flex flex-wrap">
-                    <form class="contact-panel__form" method="post"
-                        action="https://7oroof.com/demos/medcity/assets/php/contact.php" id="contactForm">
+                    <form class="contact-panel__form" method="POST" action="{{ route('enquiry-store') }}">
+                        @csrf
                         <div class="row">
                             <div class="col-sm-12">
                                 <h4 class="contact-panel__title">How Can We Help? </h4>
@@ -24,54 +24,54 @@
                                     calls.
                                 </p>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <i class="icon-user form-group-icon"></i>
                                     <input type="text" class="form-control" placeholder="Name" id="contact-name"
-                                        name="contact-name" required>
+                                        name="name" required>
+                                    @error('name')
+                                    <p class="font-weight-bold mt-2 text-danger">{{ $message }}</p>
+                                    @enderror
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <i class="icon-email form-group-icon"></i>
                                     <input type="email" class="form-control" placeholder="Email" id="contact-email"
-                                        name="contact-email" required>
+                                        name="email" required>
+                                    @error('email')
+                                    <p class="font-weight-bold mt-2 text-danger">{{ $message }}</p>
+                                    @enderror
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <i class="icon-phone form-group-icon"></i>
                                     <input type="text" class="form-control" placeholder="Phone" id="contact-Phone"
-                                        name="contact-phone" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <i class="icon-news form-group-icon"></i>
-                                    <select class="form-control">
-                                        <option value="0">Subject</option>
-                                        <option value="1">Subject 1</option>
-                                        <option value="2">Subject 1</option>
-                                    </select>
+                                        name="phone" required>
+                                    @error('phone')
+                                    <p class="font-weight-bold mt-2 text-danger">{{ $message }}</p>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <i class="icon-alert form-group-icon"></i>
                                     <textarea class="form-control" placeholder="Message" id="contact-message"
-                                        name="contact-message"></textarea>
+                                        name="message">
+                                    </textarea>
                                 </div>
                                 <button type="submit"
                                     class="btn btn__secondary btn__rounded btn__block btn__xhight mt-10">
-                                    <span>Submit Request</span> <i class="icon-arrow-right"></i>
+                                    Submit Request <i class="icon-arrow-right"></i>
                                 </button>
-                                <div class="contact-result"></div>
+                                {{-- <div class="contact-result"></div> --}}
                             </div>
                         </div>
                     </form>
                     <div
                         class="contact-panel__info d-flex flex-column justify-content-between bg-overlay bg-overlay-primary-gradient">
-                        <div class="bg-img"><img src="assets/images/banners/1.jpg" alt="banner"></div>
+                        <div class="bg-img"><img src="{{ config('app.url') }}/assets/images/banners/1.jpg" alt="banner"></div>
                         <div>
                             <h4 class="contact-panel__title color-white">Quick Contacts</h4>
                             <p class="contact-panel__desc font-weight-bold color-white mb-30">Please feel free to

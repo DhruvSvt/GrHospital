@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Enquiry;
 use Illuminate\Http\Request;
 
 class EnquiryController extends Controller
@@ -34,7 +35,14 @@ class EnquiryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+        ]);
+        Enquiry::create($request->post());
+
+        return redirect()->back();
     }
 
     /**

@@ -32,6 +32,7 @@ Route::view('/blog-single','visitors.blog-single')->name('blog-single');
 Route::get('/blog/{id}',[BlogController::class,'blog_detail'])->name('blog-detail');
 
 Route::get('/enquiry',[EnquiryController::class,'index'])->name('enquiry');
+Route::post('/enquiry/store',[EnquiryController::class,'store'])->name('enquiry-store');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
