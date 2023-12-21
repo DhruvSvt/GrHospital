@@ -15,9 +15,9 @@
                         <li class="breadcrumb-item active" aria-current="page">Our Gallery</li>
                     </ol>
                 </nav> --}}
-            </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
+            </div>
+        </div>
+    </div>
 </section>
 <!-- /.page-title -->
 
@@ -29,48 +29,22 @@
                 <div class="heading mb-60">
                     <h2 class="heading__subtitle">The Best Medical And General Practice Care!</h2>
                     <h3 class="heading__title">Providing Medical Care For The Sickest In Our Community.</h3>
-                </div><!-- /heading -->
-            </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
+                </div>
+            </div>
+        </div>
         <div class="row">
+            @foreach ($gallery as $gallery )
             <div class="col-sm-6 col-md-4 col-lg-4">
                 <div class="gallery-img">
-                    <a class="popup-gallery-item" href="assets/images/gallery/1.jpg"><i class="fas fa-eye"></i></a>
-                    <img src="assets/images/gallery/1.jpg" alt="gallery img">
-                </div><!-- /.gallery-img -->
-            </div><!-- /.col-lg-4 -->
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="gallery-img">
-                    <a class="popup-gallery-item" href="assets/images/gallery/2.jpg"><i class="fas fa-eye"></i></a>
-                    <img src="assets/images/gallery/2.jpg" alt="gallery img">
-                </div><!-- /.gallery-img -->
-            </div><!-- /.col-lg-4 -->
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="gallery-img">
-                    <a class="popup-gallery-item" href="assets/images/gallery/3.jpg"><i class="fas fa-eye"></i></a>
-                    <img src="assets/images/gallery/3.jpg" alt="gallery img">
-                </div><!-- /.gallery-img -->
-            </div><!-- /.col-lg-4 -->
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="gallery-img">
-                    <a class="popup-gallery-item" href="assets/images/gallery/4.jpg"><i class="fas fa-eye"></i></a>
-                    <img src="assets/images/gallery/4.jpg" alt="gallery img">
-                </div><!-- /.gallery-img -->
-            </div><!-- /.col-lg-4 -->
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="gallery-img">
-                    <a class="popup-gallery-item" href="assets/images/gallery/5.jpg"><i class="fas fa-eye"></i></a>
-                    <img src="assets/images/gallery/5.jpg" alt="gallery img">
-                </div><!-- /.gallery-img -->
-            </div><!-- /.col-lg-4 -->
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="gallery-img">
-                    <a class="popup-gallery-item" href="assets/images/gallery/6.jpg"><i class="fas fa-eye"></i></a>
-                    <img src="assets/images/gallery/6.jpg" alt="gallery img">
-                </div><!-- /.gallery-img -->
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
+                    <a class="popup-gallery-item" href="{{ Voyager::image($gallery->image) }}"><i
+                            class="fas fa-eye"></i></a>
+                    <img src="{{ Voyager::image($gallery->image) }}" alt="gallery img"
+                        style="width: 370px;height: 277.5px;object-fit: cover;">
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
 </section>
 <!-- /.gallery layout2 -->
 @endsection

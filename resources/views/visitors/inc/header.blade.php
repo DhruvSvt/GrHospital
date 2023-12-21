@@ -80,7 +80,7 @@
                                 <a href="gallery.html" class="nav__item-link">Our Gallery</a>
                             </li>
                             <li class="nav__item">
-                                <a href="appointment.html" class="nav__item-link">Enquiry</a>
+                                <a href="{{ route('enquiry') }}" class="nav__item-link">Enquiry</a>
                             </li>
                         </ul>
                     </li>

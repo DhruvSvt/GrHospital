@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\EnquiryController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
@@ -24,8 +25,6 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::get('/',[IndexController::class,'index'])->name('index');
 
-Route::view('/gallery','visitors.gallery')->name('gallery');
-
 Route::get('/doctors',[DoctorController::class,'show'])->name('doctors');
 Route::get('/doctor/{id}',[DoctorController::class,'doctor_detail'])->name('doctor-detail');
 Route::get('/doctor-list',[DoctorController::class,'doctor_list'])->name('doctor-list');
@@ -37,6 +36,8 @@ Route::get('/blog/{id}',[BlogController::class,'blog_detail'])->name('blog-detai
 
 Route::get('/enquiry',[EnquiryController::class,'index'])->name('enquiry');
 Route::post('/enquiry/store',[EnquiryController::class,'store'])->name('enquiry-store');
+
+Route::get('/gallery',[GalleryController::class,'index'])->name('gallery');
 
 Route::view('/service','visitors.service')->name('service');
 
