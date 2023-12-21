@@ -38,4 +38,6 @@ Route::get('/blog/{id}',[BlogController::class,'blog_detail'])->name('blog-detai
 Route::get('/enquiry',[EnquiryController::class,'index'])->name('enquiry');
 Route::post('/enquiry/store',[EnquiryController::class,'store'])->name('enquiry-store');
 
+Route::view('/service','visitors.service')->name('service');
+
 

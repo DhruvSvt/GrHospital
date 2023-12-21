@@ -74,7 +74,7 @@
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us</a>
                         <ul class="dropdown-menu">
                             <li class="nav__item">
-                                <a href="services.html" class="nav__item-link">Our Services</a>
+                                <a href="{{ route('service') }}" class="nav__item-link">Our Services</a>
                             </li>
                             <li class="nav__item">
                                 <a href="gallery.html" class="nav__item-link">Our Gallery</a>
