@@ -69,7 +69,7 @@
                 </div><!-- /.col-lg-2 -->
             </div><!-- /.row -->
             <div class="col-lg-12 " style="color:#ffffff;">
-                Copyright © GR Hospital <script>document.write(new Date().getFullYear())</script> . All rights reserved. Admin Panel &amp; Website By <a
+                Copyright © GR Hospital <script>document.write(new Date().getFullYear())</script> . All rights reserved. Website By <a
                     href="https://svtindia.in/" class="svt">SVT INDIA</a>
             </div>
         </div><!-- /.container -->
