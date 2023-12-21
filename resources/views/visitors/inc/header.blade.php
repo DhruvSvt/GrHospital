@@ -92,7 +92,7 @@
                                 <a href="{{ route('doctors') }}" class="nav__item-link">Doctors</a>
                             </li>
                             <li class="nav__item">
-                                <a href="doctors-standard.html" class="nav__item-link">Our Doctors List</a>
+                                <a href="{{ route('doctor-list') }}" class="nav__item-link">Our Doctors List</a>
                             </li>
                         </ul>
                     </li>

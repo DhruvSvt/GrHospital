@@ -23,6 +23,7 @@ Route::view('/gallery','visitors.gallery')->name('gallery');
 
 Route::get('/doctors',[DoctorController::class,'show'])->name('doctors');
 Route::get('/doctor/{id}',[DoctorController::class,'doctor_detail'])->name('doctor-detail');
+Route::get('/doctor-list',[DoctorController::class,'doctor_list'])->name('doctor-list');
 
 Route::get('/blogs',[BlogController::class,'show'])->name('blogs');
 

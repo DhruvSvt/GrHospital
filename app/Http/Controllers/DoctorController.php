@@ -16,4 +16,8 @@ class DoctorController extends Controller
         $doctors = Doctor::whereStatus(true)->latest()->paginate(3);
         return view('visitors.doctor',compact('doctors'));
     }
+
+    public function doctor_list(){
+        return view('visitors.doctor-list');
+    }
 }
