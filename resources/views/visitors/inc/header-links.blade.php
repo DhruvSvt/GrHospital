@@ -1,7 +1,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<meta name="description" content="Medcity - Medical Healthcare HTML5 Template">
+<meta name="description" content="GR Hospital - Medical Healthcare">
 <link href="{{ config('app.url') }}/assets/images/favicon/favlogo.png" rel="icon">
 <title>{{ $titile ?? 'Gr Hospital' }}</title>
 

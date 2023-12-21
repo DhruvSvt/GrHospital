@@ -1,10 +1,4 @@
-/*--------------------------
-    Project Name: Medcity
-    Version: 1.3
-    Author: 7oorof
-    Relase Date: April 2021
-    Last Date: March 2023
----------------------------*/
+
 /*---------------------------
       Table of Contents
     --------------------
@@ -13,7 +7,7 @@
     03- Sticky Navbar
     04- Scroll Top Button
     05- Close Topbar
-    06- Set Background-img to section 
+    06- Set Background-img to section
     07- Add active class to accordions
     08- Contact Form validation
     09- Slick Carousel
@@ -21,7 +15,7 @@
     11- Progress bars
     12- NiceSelect Plugin
     13- Range Slider
-     
+
  ----------------------------*/
 
 $(function () {

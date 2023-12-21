@@ -424,7 +424,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-1">
                 <div class="heading__layout2 mb-50">
-                    <h3 class="heading__title color-white">Medcity Has Touched The Lives Of Patients & Providing Care
+                    <h3 class="heading__title color-white">GR Hospital Has Touched The Lives Of Patients & Providing Care
                         for The
                         Sickest In Our Community.</h3>
                 </div>
@@ -437,7 +437,7 @@
                 </div>
             </div><!-- /.col-lg-5 -->
             <div class="col-sm-9 col-md-9 col-lg-6">
-                <p class="heading__desc font-weight-bold color-white mb-30">Medcity has been present in Europe since
+                <p class="heading__desc font-weight-bold color-white mb-30">GR Hospital has been present in Europe since
                     1990,
                     offering innovative
                     solutions, specializing in medical services for treatment of medical infrastructure. With over 100
@@ -694,7 +694,7 @@
                                 <i class="icon-health-report"></i>
                             </div><!-- /.process__icon -->
                             <h4 class="process__title">Fill In Our Medical Application</h4>
-                            <p class="process__desc">Medcity offers low-cost health coverage for adults with limited
+                            <p class="process__desc">GR Hospital offers low-cost health coverage for adults with limited
                                 income, you
                                 can
                                 enroll.</p>
@@ -917,7 +917,7 @@
             <div class="col-sm-12 col-md-12 col-lg-7">
                 <div class="contact-panel mb-50">
                     <form class="contact-panel__form" method="post"
-                        action="https://7oroof.com/demos/medcity/assets/php/contact.php" id="contactForm">
+                        action="#" id="contactForm">
                         <div class="row">
                             <div class="col-sm-12">
                                 <h4 class="contact-panel__title">Book An Appointment</h4>
@@ -1019,7 +1019,7 @@
                         families and individuals at every stage of life, with annual limits ranging from £1.5m to
                         unlimited.</p>
                     <div class="sinature color-white">
-                        <span class="font-weight-bold">Martin Qube</span><span>, Medcity Manager</span>
+                        <span class="font-weight-bold">Martin Qube</span><span>, GR Hospital Manager</span>
                     </div>
                 </div><!-- /.text__block -->
                 <div class="slick-carousel clients-light mt-20"
