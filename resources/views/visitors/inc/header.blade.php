@@ -109,7 +109,7 @@
                 <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
             </div><!-- /.navbar-collapse -->
             <div class="d-none d-xl-flex align-items-center position-relative ml-30">
-                <a href="appointment.html" class="btn btn__primary btn__rounded ml-30" style="
+                <a href="{{ route('enquiry') }}" class="btn btn__primary btn__rounded ml-30" style="
                 min-width: 133px;
                 height: 48px;">
                     <span>Enquiry</span>
