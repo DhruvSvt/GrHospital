@@ -5,6 +5,7 @@ use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\IndexController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -41,4 +42,10 @@ Route::get('/gallery',[GalleryController::class,'index'])->name('gallery');
 
 Route::view('/facilities','visitors.facilities')->name('facilities');
 
-
+Route::get('migrate',function(){
+    Artisan::call('migrate');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('config:clear');
+});
